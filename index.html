@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-projeto Js</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <input type="text" id="busca" placeholder="pesquisar por titulo">
+    </header>
+    <main>
+        <section id="tarefas">
+            <h2>Tarefas <button>Nova tarefa</button></h2>
+            <h6>Nenhuma tarefa registrada</h6>
+        </section>
+        <section id="overlay"></section>
+        <div class="modal">
+            <form>
+                <h3>Criar tarefa</h3>
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao"></textarea>
+                <button>Criar</button>
+            </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
