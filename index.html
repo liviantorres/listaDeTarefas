@@ -12,13 +12,13 @@
     </header>
     <main>
         <section id="tarefas">
-            <h2>Tarefas <button>Nova tarefa</button></h2>
+            <h2>Tarefas <button onclick="novaTarefa()">Nova tarefa</button></h2>
             <h6>Nenhuma tarefa registrada</h6>
         </section>
-        <section id="overlay"></section>
-        <div class="modal">
+        <section id="overlay" onclick="fecharModal()"></section>
+        <div class="modal" id="criarTarefa">
             <form>
-                <h3>Criar tarefa</h3>
+                <h3>Criar tarefa <box-icon name='x' size="md" onclick="fecharModal()"></box-icon> </h3>
                 <label for="titulo">Titulo</label>
                 <input type="text" id="titulo">
                 <label for="descricao">Descrição</label>
@@ -27,6 +27,7 @@
             </form>
         </div>
     </main>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
